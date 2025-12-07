@@ -59,10 +59,12 @@
     logo.addEventListener('load', ()=> startAnimations());
   }
 
-  // Pulse on click of button
+  // Pulse on hover for the optional button (only if present)
   const btn = document.querySelector('.btn');
-  btn.addEventListener('mouseenter', ()=> gsap.to(btn, {scale:1.03, duration:0.2}));
-  btn.addEventListener('mouseleave', ()=> gsap.to(btn, {scale:1, duration:0.2}));
+  if(btn){
+    btn.addEventListener('mouseenter', ()=> gsap.to(btn, {scale:1.03, duration:0.2}));
+    btn.addEventListener('mouseleave', ()=> gsap.to(btn, {scale:1, duration:0.2}));
+  }
 
   // Make lightweight confetti
   function makeConfetti(count=22){
