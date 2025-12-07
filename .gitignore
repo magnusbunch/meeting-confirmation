@@ -1,0 +1,12 @@
+# Node/npm (not required but harmless for static pages)
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.log
+
+# VSCode
+.vscode/

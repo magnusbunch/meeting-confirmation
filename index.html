@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meeting Reminder — Confirmation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  </head>
+  <body>
+    <main class="page">
+      <section class="card" role="region" aria-labelledby="headline">
+        <div class="logo-wrap">
+          <!-- Microsoft Teams logo (external SVG) -->
+          <img id="teamsLogo"
+               src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg"
+               alt="Microsoft Teams logo"
+               width="120"
+               height="120">
+        </div>
+
+        <h1 id="headline">Thank you for confirming</h1>
+        <p id="subtext">You’ll receive a reminder as soon as the meeting starts.</p>
+
+        <div class="actions">
+          <a class="btn" href="#">View meeting</a>
+        </div>
+
+        <!-- decorative confetti container -->
+        <div id="confetti"></div>
+      </section>
+    </main>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
